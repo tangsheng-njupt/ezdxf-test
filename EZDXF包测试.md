@@ -38,7 +38,7 @@ doc.saveas('filled_rectangle.dxf')
 
 使用AutoCAD打开代码生成的dxf文件，如图所示。
 
-![](image/image1.png)
+![](image1.png)
 
 2.利用自定义线性分割图像，图中点划线收到覆盖未能显示。
 
@@ -68,7 +68,7 @@ hatch.paths.add_polyline_path([(0, 0), (0, 4500), (12000, 4500), (12000, 0)])
 doc.saveas('modified.dxf')
 ```
 
-![](image/image2.png)
+![](image2.png)
 
 3.使用创建的点划线将矩形分隔为上下两部分。
 
@@ -104,7 +104,7 @@ hatch.paths.add_polyline_path([(0, 0), (6000, 0), (6000, 9000), (0, 9000), (0, 0
 doc.saveas('modifie.dxf')
 ```
 
-![](image/image3.png)
+![](image3.png)
 
 4.通过端点定义多边形，再通过定义一个缩放矩阵来反转坐标系。
 
@@ -136,7 +136,7 @@ hatch.set_pattern_fill('AR-B816', scale=5)
 doc.saveas('your_drawing.dxf')
 ```
 
-![](image/image4.png)
+![](image4.png)
 
 5.将上述步骤进行融合，通过对称变换生成需要的图像并加以填充。
 
@@ -179,4 +179,4 @@ hatch.paths.add_polyline_path(symmetric_points_step2, is_closed=True)
 doc.saveas('output.dxf')
 ```
 
-![](image/image5.png)
+![](image5.png)
